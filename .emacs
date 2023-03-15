@@ -3,22 +3,29 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
-(column-number-mode t)
-;;(display-line-numbers-mode t)
-(setq display-line-numbers-type 'relative)
-(package-initialize)
+;; Disabling startup screen.
+(setq inhibit-startup-message t)
+
+;; Disabling suspend-frame
+(global-unset-key (kbd "C-z"))
+
+(setq make-backup-files nil)
+
 (global-linum-mode 1)
 (ido-mode 1)
+
+;; Set tab width.
+(setq-default indent-tabs-mode t)
+(setq-default tab-width 4) ; Assuming you want your tabs to be four spaces wide
+(defvaralias 'c-basic-offset 'tab-width)
 
 (global-set-key [f5] 'compile)
 
 ;; The value in 1/10pt, so 100 will give 10pt.
-(set-face-attribute 'default nil :height 180)
+(set-face-attribute 'default nil :height 200)
 
 ;; Replacing bell with visible effect
 (setq visible-bell t)
-
-;;(global-unset-key (kbd "C-z")) ; I don't know what is it.
 
 ;;(package-initialize)
 (require 'package)
