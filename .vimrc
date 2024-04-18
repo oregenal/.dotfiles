@@ -28,6 +28,7 @@ set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNO
 
 au BufRead,BufNewFile *.asm,*.inc set filetype=nasm tabstop=8 shiftwidth=8
 au BufRead,BufNewFile *.s, set filetype=gas tabstop=8 shiftwidth=8
+au BufRead,BufNewFile *.lsp, set filetype=lisp tabstop=4 shiftwidth=4
 "au BufRead,BufNewFile *.cmake,CMakeList.txt set filetype=cmake
 
 " Cursor shape change

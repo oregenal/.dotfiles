@@ -11,7 +11,8 @@
 
 (setq make-backup-files nil)
 
-(global-linum-mode 1)
+;;(global-linum-mode 1)
+(global-display-line-numbers-mode 1)
 (ido-mode 1)
 
 ;; Set tab width.
@@ -35,10 +36,11 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(markdown-mode undo-tree persistent-soft)))
+ '(package-selected-packages '(magit markdown-mode undo-tree persistent-soft)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'dired-find-alternate-file 'disabled nil)
